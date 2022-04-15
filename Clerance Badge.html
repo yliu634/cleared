@@ -1,0 +1,65 @@
+
+<!-- saved from url=(0040)https://studenthealth.ucsc.edu/Mvc/Badge -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Clerance Badge</title>
+    <link rel="stylesheet" href="./Clerance Badge_files/bootstrap.cosmo.min.css">
+    <link href="./Clerance Badge_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./Clerance Badge_files/responsive.css" rel="stylesheet">
+    <style>
+        body {
+            overflow:  hidden;
+        }
+    </style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1056.0" data-gr-ext-installed="">
+<div id="quarantineBadge" class="badge-Green">
+    <div style="position: fixed; top: 0; left: 0; width: 100vw; z-index: 9999;">
+            <a href="https://studenthealth.ucsc.edu/home.aspx" class="exit btn btn-primary btn-sm pull-right"><i class="fa fa-close"></i></a>
+    </div>
+
+    <p>Clearance Status</p>
+    <h1 style="margin-top: -20px; font-size: 2.75em;">Cleared</h1>
+    <div id="ymd"+" 10:17 AM" style="font-size: 1.4em"> 4/15/2022 10:18 AM</div>
+    <script>
+        var date = new Date();
+        var y = date.getFullYear();
+        var m = date.getMonth()+1;
+        var d = date.getDate();
+        document.getElementById("ymd").innerHTML = m+"/"+d+"/"+y+" 10:17 AM";
+    </script>
+    <div id="patInfo" class="row text-center" style="margin-top: 15px;">
+            <div class="col-xs-12">
+                <img id="patImage" src="./Clerance Badge_files/IMG.jpg" alt="Patient Image" style="max-width: 170px; margin-top: -15px;">
+            </div>
+        <div class="col-xs-12">
+            <h3 id="badgename" class="mb-0" style="margin-top: 4px;">
+                    <strong>YI he,him,his LIU</strong>
+            </h3>
+        </div>
+        <div class="col-xs-12">
+            <span id="badgedob" class="ml-2">Jan 24</span>
+        </div>
+        <div class="col-xs-12">
+                <span>#1851331</span>                
+        </div>
+    </div>
+    <div id="badgeqr" class="mt-2">
+        <img src="data:image/png;base64,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">
+    </div>
+        <div style="font-size: 0.8em">This badge system is not applicable to employees</div>
+                <div style="font-size: 0.8em">Next Lab Test Due: 5/31/2022 10:00 AM</div>
+                <div style="font-size: 0.8em">Compliant with Standard Requirements</div>
+</div>
+<script src="./Clerance Badge_files/jquery.min.js.download"></script>
+<script src="./Clerance Badge_files/bootstrap.min.js.download"></script>
+<script>setTimeout(function () { location.reload(); }, 1000 * 30)</script>
+
+
+
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
